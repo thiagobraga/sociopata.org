@@ -1,5 +1,3 @@
-# Sociopata.org
+# Sociopata
 
-Sociopata.org  
-Thrash Metal / Crossover  
-Bauru + Agudos / SP
+Site band

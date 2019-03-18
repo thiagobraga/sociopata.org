@@ -1,16 +1,33 @@
 {
   "name": "sociopata.org",
-  "version": "0.1.0",
+  "author": "Thiago Braga <contato@thiagobraga.org>",
+  "description": "Sociopata Band",
+  "version": "1.0.0",
   "private": true,
-  "dependencies": {
-    "react": "^16.5.2",
-    "react-dom": "^16.5.2",
-    "react-scripts": "1.1.5"
-  },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "serve": "vue-cli-service serve --open",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "dev": "npm run serve",
+    "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm run dev"
+  },
+  "dependencies": {
+    "nouislider": "13.1.0",
+    "v-tooltip": "2.0.0-rc.33",
+    "vue": "2.6.6",
+    "vue-carousel": "0.17.0",
+    "vue-clickaway": "2.2.2",
+    "vue-lazyload": "1.2.6",
+    "vue-material": "1.0.0-beta-10.2",
+    "vue-router": "3.0.2"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "3.4.0",
+    "@vue/cli-plugin-eslint": "3.4.0",
+    "@vue/cli-service": "3.4.0",
+    "@vue/eslint-config-prettier": "4.0.1",
+    "node-sass": "4.11.0",
+    "sass-loader": "7.1.0",
+    "vue-template-compiler": "2.6.6"
   }
 }
