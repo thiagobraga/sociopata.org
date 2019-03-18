@@ -66,7 +66,7 @@
               <md-list-item
                 href="https://demos.creative-tim.com/vue-material-kit/documentation/"
                 target="_blank"
-                v-if="showDownload"
+                v-if="!showDownload"
               >
                 <i class="material-icons">content_paste</i>
                 <p>Documentation</p>
@@ -75,13 +75,13 @@
               <md-list-item
                 href="javascript:void(0)"
                 @click="scrollToElement()"
-                v-if="showDownload"
+                v-if="!showDownload"
               >
                 <i class="material-icons">cloud_download</i>
                 <p>Download</p>
               </md-list-item>
 
-              <li class="md-list-item" v-else>
+              <li class="md-list-item md-hide" v-else>
                 <a
                   href="javascript:void(0)"
                   class="md-list-item-router md-list-item-container md-button-clean dropdown"
@@ -122,34 +122,28 @@
               </li>
 
               <md-list-item
-                href="https://twitter.com/CreativeTim"
+                href="https://open.spotify.com/artist/4jThTw7lss5OnXBzwXYFSD"
                 target="_blank"
               >
-                <i class="fab fa-twitter"></i>
-                <p class="hidden-lg">Twitter</p>
-                <md-tooltip md-direction="bottom"
-                  >Follow us on Twitter</md-tooltip
-                >
+                <i class="fab fa-spotify"></i>
+                <p class="hidden-lg">Spotify</p>
+                <md-tooltip md-direction="bottom">Ouça no Spotify</md-tooltip>
               </md-list-item>
               <md-list-item
-                href="https://www.facebook.com/CreativeTim"
+                href="https://www.facebook.com/sociopatabr"
                 target="_blank"
               >
                 <i class="fab fa-facebook-square"></i>
                 <p class="hidden-lg">Facebook</p>
-                <md-tooltip md-direction="bottom"
-                  >Like us on Facebook</md-tooltip
-                >
+                <md-tooltip md-direction="bottom">Siga no Facebook</md-tooltip>
               </md-list-item>
               <md-list-item
-                href="https://www.instagram.com/CreativeTimOfficial"
+                href="https://www.instagram.com/sociopata_corrosao"
                 target="_blank"
               >
                 <i class="fab fa-instagram"></i>
                 <p class="hidden-lg">Instagram</p>
-                <md-tooltip md-direction="bottom"
-                  >Follow us on Instagram</md-tooltip
-                >
+                <md-tooltip md-direction="bottom">Siga no Instagram</md-tooltip>
               </md-list-item>
             </md-list>
           </div>
