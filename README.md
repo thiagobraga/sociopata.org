@@ -20,7 +20,7 @@
 
 <p align="center">
   <a href="https://sociopata.org" target="_blank" rel="nofollow noopener">
-    <img src="https://raw.githubusercontent.com/thiagobraga/sociopata.org/master/src/images/screenshot.png" alt="Sociopata" width="400">
+    <img src="https://raw.githubusercontent.com/thiagobraga/sociopata.org/master/public/images/screenshots/sociopata.org-screenshot.png" alt="Sociopata" width="400">
   </a>
 </p>
 
