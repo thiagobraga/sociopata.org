@@ -69,10 +69,10 @@ export default {
       return this.activePanel == panel;
     },
     getColorButton: function(colorButton) {
-      return "md-" + colorButton + "";
+      return 'md-' + colorButton + '';
     },
     getTabContent: function(index) {
-      return "tab-pane-" + index + "";
+      return 'tab-pane-' + index + '';
     }
   }
 };

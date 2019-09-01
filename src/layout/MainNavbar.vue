@@ -8,7 +8,7 @@
   >
     <div class="md-toolbar-row md-collapse-lateral">
       <div class="md-toolbar-section-start">
-        <h3 class="md-title">Sociopata</h3>
+        <h3 class="md-title">Vue Material Kit</h3>
       </div>
       <div class="md-toolbar-section-end">
         <md-button
@@ -66,7 +66,7 @@
               <md-list-item
                 href="https://demos.creative-tim.com/vue-material-kit/documentation/"
                 target="_blank"
-                v-if="!showDownload"
+                v-if="showDownload"
               >
                 <i class="material-icons">content_paste</i>
                 <p>Documentation</p>
@@ -75,13 +75,13 @@
               <md-list-item
                 href="javascript:void(0)"
                 @click="scrollToElement()"
-                v-if="!showDownload"
+                v-if="showDownload"
               >
                 <i class="material-icons">cloud_download</i>
                 <p>Download</p>
               </md-list-item>
 
-              <li class="md-list-item md-hide" v-else>
+              <li class="md-list-item" v-else>
                 <a
                   href="javascript:void(0)"
                   class="md-list-item-router md-list-item-container md-button-clean dropdown"
@@ -122,28 +122,34 @@
               </li>
 
               <md-list-item
-                href="https://open.spotify.com/artist/4jThTw7lss5OnXBzwXYFSD"
+                href="https://twitter.com/CreativeTim"
                 target="_blank"
               >
-                <i class="fab fa-spotify"></i>
-                <p class="hidden-lg">Spotify</p>
-                <md-tooltip md-direction="bottom">Ouça no Spotify</md-tooltip>
+                <i class="fab fa-twitter"></i>
+                <p class="hidden-lg">Twitter</p>
+                <md-tooltip md-direction="bottom"
+                  >Follow us on Twitter</md-tooltip
+                >
               </md-list-item>
               <md-list-item
-                href="https://www.facebook.com/sociopatabr"
+                href="https://www.facebook.com/CreativeTim"
                 target="_blank"
               >
                 <i class="fab fa-facebook-square"></i>
                 <p class="hidden-lg">Facebook</p>
-                <md-tooltip md-direction="bottom">Siga no Facebook</md-tooltip>
+                <md-tooltip md-direction="bottom"
+                  >Like us on Facebook</md-tooltip
+                >
               </md-list-item>
               <md-list-item
-                href="https://www.instagram.com/sociopata_corrosao"
+                href="https://www.instagram.com/CreativeTimOfficial"
                 target="_blank"
               >
                 <i class="fab fa-instagram"></i>
                 <p class="hidden-lg">Instagram</p>
-                <md-tooltip md-direction="bottom">Siga no Instagram</md-tooltip>
+                <md-tooltip md-direction="bottom"
+                  >Follow us on Instagram</md-tooltip
+                >
               </md-list-item>
             </md-list>
           </div>
@@ -167,7 +173,7 @@ function resizeThrottler(actualResizeHandler) {
   }
 }
 
-import MobileMenu from "@/layout/MobileMenu";
+import MobileMenu from '@/layout/MobileMenu';
 export default {
   components: {
     MobileMenu
@@ -175,16 +181,16 @@ export default {
   props: {
     type: {
       type: String,
-      default: "dark",
+      default: 'white',
       validator(value) {
         return [
-          "white",
-          "default",
-          "primary",
-          "danger",
-          "success",
-          "warning",
-          "info"
+          'white',
+          'default',
+          'primary',
+          'danger',
+          'success',
+          'warning',
+          'info'
         ].includes(value);
       }
     },
@@ -195,28 +201,28 @@ export default {
   },
   data() {
     return {
-      extraNavClasses: "",
+      extraNavClasses: '',
       toggledClass: false
     };
   },
   computed: {
     showDownload() {
-      const excludedRoutes = ["login", "landing", "profile"];
+      const excludedRoutes = ['login', 'landing', 'profile'];
       return excludedRoutes.every(r => r !== this.$route.name);
     }
   },
   methods: {
     bodyClick() {
-      let bodyClick = document.getElementById("bodyClick");
+      let bodyClick = document.getElementById('bodyClick');
 
       if (bodyClick === null) {
-        let body = document.querySelector("body");
-        let elem = document.createElement("div");
-        elem.setAttribute("id", "bodyClick");
+        let body = document.querySelector('body');
+        let elem = document.createElement('div');
+        elem.setAttribute('id', 'bodyClick');
         body.appendChild(elem);
 
-        let bodyClick = document.getElementById("bodyClick");
-        bodyClick.addEventListener("click", this.toggleNavbarMobile);
+        let bodyClick = document.getElementById('bodyClick');
+        bodyClick.addEventListener('click', this.toggleNavbarMobile);
       } else {
         bodyClick.remove();
       }
@@ -229,15 +235,15 @@ export default {
     handleScroll() {
       let scrollValue =
         document.body.scrollTop || document.documentElement.scrollTop;
-      let navbarColor = document.getElementById("toolbar");
+      let navbarColor = document.getElementById('toolbar');
       this.currentScrollValue = scrollValue;
       if (this.colorOnScroll > 0 && scrollValue > this.colorOnScroll) {
         this.extraNavClasses = `md-${this.type}`;
-        navbarColor.classList.remove("md-transparent");
+        navbarColor.classList.remove('md-transparent');
       } else {
         if (this.extraNavClasses) {
-          this.extraNavClasses = "";
-          navbarColor.classList.add("md-transparent");
+          this.extraNavClasses = '';
+          navbarColor.classList.add('md-transparent');
         }
       }
     },
@@ -245,17 +251,17 @@ export default {
       resizeThrottler(this.handleScroll);
     },
     scrollToElement() {
-      let element_id = document.getElementById("downloadSection");
+      let element_id = document.getElementById('downloadSection');
       if (element_id) {
-        element_id.scrollIntoView({ block: "end", behavior: "smooth" });
+        element_id.scrollIntoView({ block: 'end', behavior: 'smooth' });
       }
     }
   },
   mounted() {
-    document.addEventListener("scroll", this.scrollListener);
+    document.addEventListener('scroll', this.scrollListener);
   },
   beforeDestroy() {
-    document.removeEventListener("scroll", this.scrollListener);
+    document.removeEventListener('scroll', this.scrollListener);
   }
 };
 </script>

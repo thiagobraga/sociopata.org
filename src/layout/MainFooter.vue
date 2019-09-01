@@ -1,6 +1,6 @@
 <template>
   <footer
-    class="footer md-hide"
+    class="footer"
     :class="{ [`footer-${type}`]: type }"
     :data-background-color="backgroundColor"
   >
