@@ -193,10 +193,10 @@ export default {
   },
   mounted() {
     this.onResponsiveInverted();
-    window.addEventListener("resize", this.onResponsiveInverted);
+    window.addEventListener('resize', this.onResponsiveInverted);
   },
   beforeDestroy() {
-    window.removeEventListener("resize", this.onResponsiveInverted);
+    window.removeEventListener('resize', this.onResponsiveInverted);
   }
 };
 </script>

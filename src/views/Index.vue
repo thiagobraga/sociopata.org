@@ -23,15 +23,15 @@
 </template>
 
 <script>
-import BasicElements from "./components/BasicElementsSection";
-import Navigation from "./components/NavigationSection";
-import SmallNavigation from "./components/SmallNavigationSection";
-import Tabs from "./components/TabsSection";
-import NavPills from "./components/NavPillsSection";
-import Notifications from "./components/NotificationsSection";
-import TypographyImages from "./components/TypographyImagesSection";
-import JavascriptComponents from "./components/JavascriptComponentsSection";
-import { LoginCard } from "@/components";
+import BasicElements from './components/BasicElementsSection';
+import Navigation from './components/NavigationSection';
+import SmallNavigation from './components/SmallNavigationSection';
+import Tabs from './components/TabsSection';
+import NavPills from './components/NavPillsSection';
+import Notifications from './components/NotificationsSection';
+import TypographyImages from './components/TypographyImagesSection';
+import JavascriptComponents from './components/JavascriptComponentsSection';
+import { LoginCard } from '@/components';
 
 export default {
   components: {
@@ -45,28 +45,28 @@ export default {
     JavascriptComponents,
     LoginCard
   },
-  name: "index",
-  bodyClass: "index-page",
+  name: 'index',
+  bodyClass: 'index-page',
   props: {
     image: {
       type: String,
-      default: require("@/assets/img/background.jpg")
+      default: require('@/assets/img/background.jpg')
     },
     logoLarge: {
       type: String,
-      default: require("@/assets/img/sociopata-logo.png")
+      default: require('@/assets/img/sociopata-logo.png')
     },
     signup: {
       type: String,
-      default: require("@/assets/img/city.jpg")
+      default: require('@/assets/img/city.jpg')
     },
     landing: {
       type: String,
-      default: require("@/assets/img/landing.jpg")
+      default: require('@/assets/img/landing.jpg')
     },
     profile: {
       type: String,
-      default: require("@/assets/img/profile.jpg")
+      default: require('@/assets/img/profile.jpg')
     }
   },
   data() {
@@ -99,10 +99,10 @@ export default {
   },
   mounted() {
     this.leafActive();
-    window.addEventListener("resize", this.leafActive);
+    window.addEventListener('resize', this.leafActive);
   },
   beforeDestroy() {
-    window.removeEventListener("resize", this.leafActive);
+    window.removeEventListener('resize', this.leafActive);
   }
 };
 </script>

@@ -272,27 +272,27 @@
 export default {
   data() {
     return {
-      selectedEmployee: "",
+      selectedEmployee: '',
       employees: [
-        "Jim Halpert",
-        "Dwight Schrute",
-        "Michael Scott",
-        "Pam Beesly",
-        "Angela Martin",
-        "Kelly Kapoor",
-        "Ryan Howard",
-        "Kevin Malone"
+        'Jim Halpert',
+        'Dwight Schrute',
+        'Michael Scott',
+        'Pam Beesly',
+        'Angela Martin',
+        'Kelly Kapoor',
+        'Ryan Howard',
+        'Kevin Malone'
       ]
     };
   },
   props: {
     image: {
       type: String,
-      default: require("@/assets/img/bg.jpg")
+      default: require('@/assets/img/bg.jpg')
     },
     img: {
       type: String,
-      default: require("@/assets/img/faces/avatar.jpg")
+      default: require('@/assets/img/faces/avatar.jpg')
     }
   },
   computed: {

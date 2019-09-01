@@ -53,7 +53,7 @@ export default {
     tabIcon: Array,
     colorButton: {
       type: String,
-      default: ""
+      default: ''
     }
   },
   data() {

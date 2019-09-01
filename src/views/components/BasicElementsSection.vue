@@ -244,9 +244,9 @@
 </template>
 
 <script>
-import { Pagination } from "@/components";
-import { Slider } from "@/components";
-import { Badge } from "@/components";
+import { Pagination } from '@/components';
+import { Slider } from '@/components';
+import { Badge } from '@/components';
 
 export default {
   components: {

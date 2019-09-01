@@ -57,13 +57,13 @@
 </template>
 
 <script>
-import { LoginCard } from "@/components";
+import { LoginCard } from '@/components';
 
 export default {
   components: {
     LoginCard
   },
-  bodyClass: "login-page",
+  bodyClass: 'login-page',
   data() {
     return {
       firstname: null,
@@ -74,7 +74,7 @@ export default {
   props: {
     header: {
       type: String,
-      default: require("@/assets/img/profile_city.jpg")
+      default: require('@/assets/img/profile_city.jpg')
     }
   },
   computed: {

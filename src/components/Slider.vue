@@ -2,7 +2,7 @@
   <div class="slider" :class="[`slider-${type}`]" :disabled="disabled"></div>
 </template>
 <script>
-import noUiSlider from "nouislider";
+import noUiSlider from 'nouislider';
 
 export default {
   name: 'slider',
