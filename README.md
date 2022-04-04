@@ -26,15 +26,13 @@
 
 ### Localização
 
-> Bauru, Agudos, Avaí / SP / Brasil
+> Bauru, Agudos / SP / Brasil
 
 ### Vídeos
 
 > [youtu.be/Zne7DpwXZN4](https://youtu.be/Zne7DpwXZN4)  
 > [youtu.be/xUJfO0IFVkE](https://youtu.be/xUJfO0IFVkE)  
 > [youtu.br/YDMq7tUyDWQ](https://youtu.be/YDMq7tUyDWQ)  
-
-* Atualizar
 
 ### Músicas
 
