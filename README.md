@@ -23,8 +23,6 @@
 ### Contatos
 
 > contato@sociopata.org  
-> +55 (14) 99165 5873  
-> Thiago Braga
 
 ### Localização
 
