@@ -1,24 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import './styles/theme.scss';
+import logo from './images/logo.png';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main>
+      <img src={logo} alt="Sociopata logo" className='logo' />
+
+      <iframe
+        src="https://open.spotify.com/embed/album/4f4suVxwovkeCk2nXbAlLt?theme=0"
+        title="Sociopata - Corrosão [2016] [EP]"
+        width="320"
+        height="270"
+        frameBorder="0"
+        allowtransparency="true"
+        allow="encrypted-media"
+      />
+    </main>
   );
 }
 
