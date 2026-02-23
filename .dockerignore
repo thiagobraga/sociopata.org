@@ -4,3 +4,5 @@ build
 .gitignore
 .vscode
 *.log
+.env
+.env.example
