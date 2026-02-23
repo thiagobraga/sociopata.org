@@ -1,4 +1,5 @@
 *.log
+.docker/Dockerfile
 .env
 .env.example
 .git
@@ -6,4 +7,5 @@
 .vscode
 TODO.md
 build
+compose.yml
 node_modules
