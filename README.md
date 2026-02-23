@@ -26,6 +26,18 @@ O nome da banda é bastante sugestivo e aberto à interpretação, partindo para
 
 A banda está concentrada na gravação de um novo álbum em 2022.
 
+### Install (Docker)
+
+Requirements:
+- Docker Desktop
+
+Run:
+- `docker compose up --build -d`
+- open http://localhost:3010
+
+Stop:
+- `docker compose down --timeout 0`
+
 ### Contatos
 
 contato@sociopata.org  
@@ -54,4 +66,3 @@ contato@sociopata.org
 
 [whiplash.net/materias/news_819/195835-sociopata.html#.Uz4FQfnTGNd](https://whiplash.net/materias/news_819/195835-sociopata.html#.Uz4FQfnTGNd)  
 [whiplash.net/materias/cds/197972-sociopata.html#.Uz4FQfnTGNd](https://whiplash.net/materias/cds/197972-sociopata.html#.Uz4FQfnTGNd)  
-[licordechorume.blogspot.com.br/2014/02/sociopata-st-2013.html](https://licordechorume.blogspot.com.br/2014/02/sociopata-st-2013.html)  
