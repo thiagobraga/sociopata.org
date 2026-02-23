@@ -5,6 +5,10 @@
 - [x] Docker: add deterministic compose project name (`name: sociopataorg`)
 - [x] README: add Install section (Docker)
 - [x] README: remove broken review link (licordechorume)
-- [ ] Yarn audit: run and fix
-- [ ] Traefik local proxy: sociopata.org.local + lodorecords.local
-- [ ] Add sociopata.org + traefik to VSCode Project Manager projects.json
+
+## 23/02/2026 10:14
+- [x] Docker Compose: use `.env` + `COMPOSE_PROJECT_NAME=sociopata-org`
+- [x] Docker Compose: rename service from `web` to `sociopata-web`
+- [x] Git: add `.env` to `.gitignore`
+- [x] Git: add `.env.example`
+- [x] Docker: add `.env`, `.env.example`, `TODO.md`, `compose.yml`, `.docker/Dockerfile` to `.dockerignore` (sorted)
