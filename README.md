@@ -6,8 +6,6 @@
 
 <hr>
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/2a88e949-7dae-4e8e-8cec-f08864979388/deploy-status)](https://app.netlify.com/sites/sociopata/deploys)
-
 ### Release
 
 #### English
